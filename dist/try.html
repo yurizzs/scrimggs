@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Borders with Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+              spin: {
+                from: { '--angle': '0deg' },
+                to: { '--angle': '360deg' },
+              },
+            },
+            animation: {
+              spin: 'spin 3s linear infinite',
+            },
+            backgroundImage: {
+              'gradient-conic': 'conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545)',
+            },
+          },
+        },
+        plugins: [
+          function ({ addUtilities }) {
+            addUtilities({
+              '@property --angle': {
+                syntax: '"<angle>"',
+                initialValue: '0deg',
+                inherits: false,
+              },
+            });
+          },
+        ],
+      };
+    </script>
+    <style>
+      @layer utilities {
+        .bg-gradient-conic {
+          background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+        }
+      }
+    </style>
+</head>
+<body class="bg-[#0b0d15] text-[#a2a5b3] flex items-center justify-center min-h-screen">
+
+    <div class="card relative bg-[#1c1f2b] text-center p-8 rounded-lg w-72 text-white">
+        <h1 class="text-xl font-semibold mb-4">Animate Borders</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ad exercitationem voluptatem ullam et.</p>
+        <div class="absolute inset-0 -z-10 rounded-lg bg-gradient-conic animate-spin"></div>
+        <div class="absolute inset-0 -z-20 rounded-lg bg-gradient-conic opacity-50 blur-2xl animate-spin"></div>
+    </div>
+
+</body>
+</html>

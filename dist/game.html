@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrim</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <style>
+        .hover-zoom:hover {
+            transform: scale(1.2);
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        section {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .swiper-slide img {
+            transition: transform 0.3s ease; /* Smooth transition for transform and box-shadow */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="text-center fixed top-0 w-full z-50 flex-wrap">
+        <div class="bg-[#111111] flex p-3 justify-between">
+            <div class="flex justify-center items-center gap-2">
+                <img src="/dist/pics/logoi2 (2).png" alt="scrimggs" class="h-10 w-18 ml-7.5 ">
+                <p class="font-font1 bg-gradient-to-r from-[#00BFFF] via-[#FF1493] to-[#FF4500] bg-clip-text text-transparent text-2xl mt-2">SCRIMGGS</p>
+            </div>
+            <ul id="nav-item" class="flex list-none cursor-pointer text-base relative">
+                <li class="my-3.5 mx-5"><a href="#home" class="text-white opacity-100 hover:text-white hover:font-bold hover:opacity-100 ">HOME</a></li>
+                <li class="my-3.5 mx-5"><a href="#about" class="text-white opacity-100 hover:text-white hover:font-bold hover:opacity-100">ABOUT</a></li>
+                <li class="my-3.5 mx-5"><a href="#news" class="text-white opacity-100 hover:text-white hover:font-bold hover:opacity-100">NEWS & UPDATE</a></li>
+                <button class="text-white opacity-100 hover:text-white hover:font-bold hover:opacity-100" id="open-zapier">CONTACT US</button>
+            </ul>
+        </div>
+    </div>
+
+    
+    <!-- Home Section -->
+    <section class="bg-[url('/dist/pics/kuro3.png')] bg-cover bg-center flex justify-center items-center min-h-screen relative" id="home" style="padding-top: 70px;">
+        <div class="swiper-container flex justify-around items center relative w-full max-w-6xl h-96 overflow-hidden">
+            <div class="swiper-wrapper top-14">
+                <!-- slide 1 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-center relative transition-transform duration-300 ease-in-out hover-zoom">
+                        <div class="bg-blue-700 opacity-20 rounded-xl w-60 h-64 absolute z-0 "></div>
+                        <img src="/dist/pics/mluliti2.png" alt="ml" class="w-48 h-44 relative" />
+                        <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/scrimggs-tournament/scrimggs-tournament?hide_gdpr_banner=1'});return false;" class="text-black font-bold bg-blue-400 px-4 py-2 rounded-3xl z-20">JOIN NOW</a>
+                        <!-- Calendly link widget end -->
+                    </div>
+                </div>
+                
+                <!-- slide 2 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-center relative transition-transform duration-300 ease-in-out hover-zoom">
+                        <div class="bg-yellow-600 opacity-20 rounded-xl w-60 h-64 absolute"></div>
+                        <img src="/dist/pics/codm.png" alt="codm" class="w-48 h-44 relative z-10 mb-1" />
+                        <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/scrimggs-tournament/scrimggs-codm-tournament?hide_gdpr_banner=1&primary_color=f3ca0a'});return false;" class="text-black font-bold bg-yellow-400 px-4 py-2 rounded-3xl z-20">JOIN NOW</a>
+                        <!-- Calendly link widget end -->
+                    </div>
+                </div>
+                
+                <!-- slide 3 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-center relative transition-transform duration-300 ease-in-out hover-zoom">
+                        <div class="bg-red-700 opacity-20 rounded-xl w-60 h-64 absolute"></div>
+                        <img src="/dist/pics/hok3.png" alt="hok" class="w-48 h-44 relative z-0" />
+                        <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/scrimggs-tournament/scrimggs-hok-tournament?hide_gdpr_banner=1&primary_color=fd0202'});return false;" class="text-black font-bold bg-red-400 px-4 py-2 rounded-3xl z-20">JOIN NOW</a>
+                        <!-- Calendly link widget end -->
+                        <!-- Calendly link widget end -->
+                        <!-- <button id="hok" class="text-black font-bold bg-red-400 px-4 py-2 rounded-3xl z-20">JOIN NOW</button> -->
+                    </div>
+                </div>
+                
+                <!-- slide 4 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-center relative transition-transform duration-300 ease-in-out hover-zoom">
+                        <div class="bg-white opacity-40 rounded-xl w-60 h-64 absolute"></div>
+                        <img src="/dist/pics/valo.png" alt="valorant" class="w-48 h-44 relative z-0" />
+                       <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/scrimggs-tournament/scrimggs-valorant-tournament?hide_gdpr_banner=1&primary_color=363636'});return false;" class="text-black font-bold bg-white px-4 py-2 rounded-3xl z-20">JOIN NOW</a>
+                        <!-- Calendly link widget end -->
+                        <!-- <button id="valo" class="text-black font-bold bg-white px-4 py-2 rounded-3xl z-20">JOIN NOW</button> -->
+                    </div>
+                </div>
+                
+                <!-- slide 5 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-center relative transition-transform duration-300 ease-in-out hover-zoom">
+                        <div class="bg-green-900 opacity-50 rounded-xl w-60 h-64 absolute"></div>
+                        <img src="/dist/pics/pubg.png" alt="pubg" class="w-48 h-44 relative z-0" />
+                        <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/scrimggs-tournament/scrimggs-pubg-tournament?hide_gdpr_banner=1&primary_color=08c40a'});return false;" class="text-black font-bold bg-green-600 px-4 py-2 rounded-3xl z-20">JOIN NOW</a>
+                        <!-- Calendly link widget end -->
+                        <!-- <button id="pubg" class="text-black font-bold bg-green-600 px-4 py-2 rounded-3xl z-20">JOIN NOW</button> -->
+                    </div>
+                </div>
+
+                <!-- slide 6 -->
+                <div class="swiper-slide">
+                    <div class="flex flex-col items-center justify-center relative transition-transform duration-300 ease-in-out hover-zoom">
+                        <div class="bg-orange-600 opacity-40 rounded-xl w-60 h-64 absolute"></div>
+                        <img src="/dist/pics/lol2.png" alt="lol" class="w-48 h-44 relative z-0" />
+                        <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/scrimggs-tournament/scrimggs-lol-tournament?hide_gdpr_banner=1&primary_color=ff9800'});return false;" class="text-black font-bold bg-orange-400 px-4 py-2 rounded-3xl z-20">JOIN NOW</a>
+                        <!-- Calendly link widget end -->
+                        <!-- <button id="lol" class="text-black font-bold bg-orange-400 px-4 py-2 rounded-3xl z-20">JOIN NOW</button> -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next !text-white absolute right-0 transform -translate-y-1/2 p-2 rounded-full"></div>
+            <div class="swiper-button-prev !text-white absolute left-0 transform -translate-y-1/2 p-2 rounded-full"></div>
+        </div>
+    </section>
+    
+    
+    <!-- About Section -->
+    <section class="bg-[url('/dist/pics/kuro3.png')] bg-cover bg-center flex justify-center items-center min-h-full relative" id="about" style="padding-top: 70px;">
+        <div class="flex flex-row content-center justify-between min-w-full min-h-[calc(100vh-70px)]">
+            <div class="text-white flex flex-wrap flex-col justify-center content-center ml-10">
+                <p class="font-font1 text-red-400 text-5xl mb-10">About</p>
+                <p class="w-96 text-wrap text-left mb-5">
+                    A scrim (short for "scrimmage") is a practice match between competitive teams or players. These matches are typically organized privately, outside of official tournaments, and are meant to refine skills, develop strategies, and experiment with team compositions in a controlled but competitive environment.
+                </p>
+            </div>
+            <div class="flex">
+                <div class="flex flex-row flex-wrap items-center w-52 justify-center relative group shadow-lg overflow-hidden">
+                    <div class="bg-blue-700 opacity-20 w-52 h-full absolute z-0"></div>
+                    <img src="/dist/pics/mluliti2.png" alt="ml" class="w-52 mt-5">
+                    <div class="absolute top-0 left-0 w-full h-full bg-blue-700 flex flex-col items-center justify-center gap-5 transform -translate-x-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-x-0 group-hover:opacity-90">
+                        <p class="font-font1 w-32 text-center">Mobile Legends</p>
+                        <p class="w-4/5 text-left font-bold text-white text-sm">Join fast-paced 5v5 MOBA battles. Choose from a variety of heroes, strategize with your team, and outplay your opponents in quick matches.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row flex-wrap items-center justify-center relative group shadow-lg overflow-hidden">
+                    <div class="bg-yellow-600 opacity-20 w-52 h-full absolute z-0"></div>
+                    <img src="/dist/pics/codm.png" alt="codm" class="w-52">
+                    <div class="absolute top-0 left-0 w-full h-full bg-yellow-600 flex flex-col items-center justify-center gap-3 transform -translate-y-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-0 group-hover:opacity-90">
+                        <p class="w-4/5 text-center font-font1">Call of Duty <br> Mobile</p>
+                        <p class="w-4/5 text-left font-bold text-white text-sm">Experience console-quality warfare with various multiplayer modes, including team deathmatch and battle royale. Customize loadouts, unlock characters, and compete in fast-paced matches.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row flex-wrap items-center w-52 justify-center relative group shadow-lg overflow-hidden">
+                    <div class="bg-red-700 opacity-20 w-52 h-full absolute z-0"></div>
+                    <img src="/dist/pics/hok3.png" alt="hok" class="w-40 mt-3">
+                    <div class="absolute top-0 left-0 w-full h-full bg-red-700 flex flex-col items-center justify-center gap-5 transform translate-x-full opacity-0 transition-all duration-1000 ease-in-out group-hover:translate-x-0 group-hover:opacity-90">
+                        <p class="font-font1 w-32 text-center">Honor of Kings</p>
+                        <p class="w-4/5 text-left font-bold text-white text-sm">Engage in 5v5 battles in this popular MOBA game. Choose from a diverse roster of heroes, each with unique abilities, and work together to destroy the enemy's core.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[url('/dist/pics/kuro3.png')] bg-cover bg-center flex justify-center items-center min-h-full relative" style="padding-top: 70px;">
+        <div class="flex flex-row content-center justify-between min-w-full min-h-[calc(100vh-70px)]">
+            <div class="flex">
+
+                <!-- Valorant -->
+                <div class="flex flex-row flex-wrap items-center w-52 justify-center relative group shadow-lg overflow-hidden">
+                    <div class="bg-white opacity-20 w-52 h-full absolute z-0"></div>
+                    <img src="/dist/pics/valo.png" alt="valorant" class="w-52 mt-5">
+                    <div class="absolute top-0 left-0 w-full h-full bg-white flex flex-col items-center gap-5 justify-center transform -translate-x-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-x-0 group-hover:opacity-90">
+                        <p class="font-font1 text-center ">Valorant</p>
+                        <p class="w-4/5 text-sm text-left font-bold text-gray-500">A tactical FPS where players use precise gunplay and unique agent abilities in 5v5 matches. Combine strategy and skill to outsmart opponents and secure victory.</p>
+                    </div>
+                </div>
+
+                <!-- PUBG -->
+                <div class="flex flex-row flex-wrap items-center justify-center relative group shadow-lg overflow-hidden">
+                    <div class="bg-green-600 opacity-20 w-52 h-full absolute z-0"></div>
+                    <img src="/dist/pics/pubg.png" alt="pubg" class="w-52">
+                    <div class="absolute top-0 left-0 w-full h-full bg-green-600 flex flex-col items-center justify-center gap-5 transform -translate-y-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-0 group-hover:opacity-90">
+                        <p class="font-font1 text-center">PUBG</p>
+                        <p class="w-4/5 text-sm text-left font-bold text-white">Survive on a massive map by scavenging weapons and supplies. Fight to be the last player or team standing in this intense and strategic battle royale game.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- LOL -->
+                <div class="flex flex-row flex-wrap items-center w-52 justify-center relative group shadow-lg overflow-hidden">
+                    <div class="bg-orange-500 opacity-20 w-52 h-full absolute z-0"></div>
+                    <img src="/dist/pics/lol2.png" alt="lol" class="w-40 mt-3">
+                    <div class="absolute top-0 left-0 w-full h-full bg-orange-700 flex flex-col items-center justify-center gap-5 transform translate-x-full opacity-0 transition-all duration-1000 ease-in-out group-hover:translate-x-0 group-hover:opacity-90">
+                        <p class="font-font1 text-center w-32">League of Legends</p>
+                        <p class="w-4/5 text-sm text-left font-bold text-white">Form two teams of five champions and battle to destroy the enemy Nexus in this classic MOBA. With a vast roster of champions and deep strategic gameplay, LoL remains a cornerstone of the genre.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-white flex flex-wrap flex-col justify-center content-start mr-10">
+                <p class="font-font1 text-violet-400 text-5xl mb-10 text-right">About</p>
+                <p class="w-96 text-wrap text-right">
+                    A scrim (short for "scrimmage") is a practice match between competitive teams or players. These matches are typically organized privately, outside of official tournaments, and are meant to refine skills, develop strategies, and experiment with team compositions in a controlled but competitive environment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- News & Update -->
+     <section class="bg-[url('/dist/pics/kuro3.png')] bg-cover bg-center flex justify-center items-center min-h-full relative" id="news" style="padding-top: 70px;">
+         <div class="flex flex-col items-center justify-center min-w-full min-h-[calc(100vh-70px)]">
+            <p class="bg-gradient-to-r from-red-400 to-violet-400 bg-clip-text text-transparent text-xl font-font1 mb-1">News & Update</p>
+            <div class="flex flex-row flex-wrap items-center justify-around min-w-full">
+                <div class="flex flex-row flex-wrap items-center w-96 justify-center mb-5 relative group shadow-lg overflow-hidden">
+                     <video src="/dist/pics/img1.mp4" autoplay muted loop></video>
+                    <div class="absolute top-0 left-0 w-full h-full bg-red-700 flex flex-col items-center justify-center gap-5 transform -translate-y-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-0 group-hover:opacity-80">
+                        <p class="font-font1 w-32 text-center text-2xl">PUBG</p>
+                        <p class="w-4/5 text-center text-white text-sm font-semibold">A camouflaged soldier strategically waits for the perfect moment to strike in this intense battle. The tension is palpable as the player prepares for an ambush.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row flex-wrap items-center w-96 justify-center mb-5 relative group shadow-lg overflow-hidden">
+                     <video src="/dist/pics/vid.mp4" autoplay muted loop></video>
+                    <div class="absolute top-0 left-0 w-full h-full bg-red-700 flex flex-col items-center justify-center gap-5 transform -translate-y-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-0 group-hover:opacity-80">
+                        <p class="font-font1 w-44 text-center text-xl">Multiplayer COD'M</p>
+                        <p class="w-4/5 text-center font-semibold text-white text-sm">The battlefield unfolds in this game, showcasing a dynamic team fight where skill and coordination are crucial for victory.</p>
+                    </div>
+                </div>
+                <div class="flex flex-row flex-wrap items-center w-96 justify-center mb-5 relative group shadow-lg overflow-hidden">
+                     <video src="/dist/pics/img2.mp4" autoplay muted loop></video>
+                    <div class="absolute top-0 left-0 w-full h-full bg-red-700 flex flex-col items-center justify-center gap-5 transform -translate-y-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-0 group-hover:opacity-80">
+                        <p class="font-font1 w-56 text-center text-xl">Battle Royale <br> COD'M</p>
+                        <p class="w-4/5 text-center font-semibold text-white text-sm">A strategic position, aiming for a long-range shot.  Precision and timing are key to success.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid auto-cols-auto auto-rows-auto gap-2 min-h-full justify-between">
+                <div class="col-start-6 col-end-9 row-start-1 row-end-2 ">
+                    <div class="flex flex-row flex-wrap items-center justify-center relative group shadow-lg overflow-hidden rounded-md border-4 border-white">
+                        <img src="/dist/pics/hightlight1.jpg" alt="highlights" class="w-80">
+                        <div class="absolute top-0 left-0 w-full h-full bg-[#00008b89] flex flex-col items-center justify-center transform -translate-y-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-0 group-hover:opacity-80">
+                            <p class="font-font1 w-44 text-center text-white">Call of Duty Mobile</p>
+                            <p class="w-4/5 text-center font-semibold text-white text-sm">A victorious team celebrates their hard-fought win in Multiplayer, the reward for mastering diverse heroes and teamwork.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-6 col-end-9 row-start-3 row-end-4">
+                    <div class="flex flex-row flex-wrap items-center justify-center relative group shadow-lg overflow-hidden rounded-md border-4 border-white">
+                        <img src="/dist/pics/highlight8.jpeg" alt="highlights" class="w-80">
+                        <div class="absolute top-0 left-0 w-full h-full bg-[#00008b89] flex flex-col items-center justify-center transform -translate-y-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-0 group-hover:opacity-80">
+                            <p class="font-font1 w-32 text-center text-white">Mobile Legends</p>
+                            <p class="w-4/5 text-center font-semibold text-white text-sm">A final victory celebrates another successful match, emphasizing the rewarding feeling of teamwork and triumph</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-10 col-end-13 row-start-3 row-end-4">
+                    <div class="flex flex-row flex-wrap items-center justify-center relative group shadow-lg overflow-hidden rounded-md border-4 border-white">
+                        <img src="/dist/pics/highlight9.jpeg" alt="highlights" class="w-80">
+                        <div class="absolute top-0 left-0 w-full h-full bg-[#00008b89] flex flex-col items-center justify-center transform -translate-y-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-0 group-hover:opacity-80">
+                            <p class="font-font1 w-32 text-center text-white">League of Legends</p>
+                            <p class="w-4/5 text-center font-semibold text-white text-sm">A thrilling Mobile Legends team fight is depicted, showcasing the fast-paced action and strategic depth of the game.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-10 col-end-13 row-start-1 row-end-3">
+                    <div class="flex flex-row flex-wrap items-center justify-center relative group shadow-lg overflow-hidden rounded-md border-4 border-white">
+                        <img src="/dist/pics/highlights7.png" alt="highlights" class="w-80">
+                        <div class="absolute top-0 left-0 w-full h-full bg-[#00008b89] flex flex-col items-center justify-center transform -translate-y-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-0 group-hover:opacity-80">
+                            <p class="font-font1 w-32 text-center text-white">Valorant</p>
+                            <p class="w-4/5 text-center font-semibold text-white text-sm">The vibrant character Killjoy is showcased, highlighting her unique abilities and stylish design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-2 col-end-5 row-start-1 row-end-3">
+                    <div class="flex flex-row flex-wrap items-center justify-center relative group shadow-lg overflow-hidden rounded-md border-4 border-white">
+                        <img src="/dist/pics/hightlight10.jpeg" alt="highlights" class="w-80">
+                        <div class="absolute top-0 left-0 w-full h-full bg-[#00008b89] flex flex-col items-center justify-center transform -translate-y-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-0 group-hover:opacity-80">
+                            <p class="font-font1 w-32 text-center text-white">Honor Of Kings</p>
+                            <p class="w-4/5 text-center font-semibold text-white text-sm">This game highlights the strategic map awareness required to outmaneuver opponents and control key areas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-start-2 col-end-5 row-start-3 row-end-4">
+                    <div class="flex flex-row flex-wrap items-center justify-center relative group shadow-lg overflow-hidden rounded-md border-4 border-white">
+                        <img src="/dist/pics/highlght11.jpg" alt="highlights" class="w-80 ">
+                        <div class="absolute top-0 left-0 w-full h-full bg-[#00008b89] flex flex-col items-center justify-center transform -translate-y-full opacity-0 transition-all duration-1000 ease-in-out group-hover:-translate-y-0 group-hover:opacity-80">
+                            <p class="font-font1 w-32 text-center text-white">PUBG</p>
+                            <p class="w-4/5 text-center font-semibold text-white text-sm">This battle captures the excitement of a close-quarters battle, where quick reflexes and skillful maneuvering are critical.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="bg-[#111111] py-4">
+        <div class="contaienr mx-auto flex justify-between items-center">
+            <span class="text-white ml-5">&copy; 2025 <strong class="font-font1 bg-gradient-to-r from-[#00BFFF] via-[#FF1493] to-[#FF4500] bg-clip-text text-transparent">SCRIMGGS</strong>, All rights reserved.</span>
+            <!-- <img src="/dist/pics/logoi2 (2).png" alt="logo" class="w-14"> -->
+            <div class="flex gap-5 items-center justify-around mr-5">
+                <i class="fab fa-github fa-xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Form Zapier -->
+    <section class="mb-12">
+        <div id="popup-zapier" class="fixed top-0 left-0 w-full h-full justify-center items-center z-20 hidden">
+            <div class="mx-auto p-8 bg-[#111111] rounded-lg shadow-md max-w-7xl max-h-[90%]">
+                <form id="form" class="flex flex-col space-y-5 w-72">
+                    <div class="flex justify-between text-xl text-center">
+                        <span id="close-zapier" class="text-white cursor-pointer items-start">&times;</span>
+                        <p class="font-font1 bg-gradient-to-r from-[#00BFFF] via-[#FF1493] to-[#FF4500] bg-clip-text text-transparent">ScrimGGs</p>
+                        <div></div>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-white">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your Email" class="w-full px-6 py-3 border border-gray-300 rounded-lg shadow-sm">
+                    </div>
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-white">Clan Name</label>
+                        <input type="name" id="name" name="name" required placeholder="Enter your Clan Name" class="w-full px-6 py-3 border border-gray-300 rounded-lg shadow-sm">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-white">Feedback</label>
+                        <textarea name="message" id="message" rows="5" placeholder="Send us Feedback" class="w-full px-6 py-3 border border-gray-200 rounded-lg shadow-sm"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="px-6 py-3 bg-white text-black font-semibold rounded-lg">Send Feedback</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="popup-calendly" class="absolute top-0 left-0 w-full h-screen justify-center items-center z-30 hidden">
+            <div class="w-96 h-96 max-h-full p-6 bg-white flex flex-col items-center rounded-lg shadow-md max-w-xl">
+                <span id="close-calendly" class="cursor-pointer ml-80 text-black text-2xl">×</span>
+                <div id="calendly-container" class="min-w-auto h-full">
+                    <div id="calendly-inline-widget" class="w-full h-full"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Navbar Link Active State Logic
+            const links = document.querySelectorAll('#nav-item a');
+            links.forEach(link => {
+                link.addEventListener('click', function () {
+                    // Remove active state from all links
+                    links.forEach(item => {
+                        item.classList.remove('font-black', 'text-white');
+                        item.classList.add('text-white');
+                    });
+                    // Add active state to clicked link
+                    this.classList.add('font-black', 'text-white');
+                });
+            });
+            
+
+            // 3. Swiper Initialization
+            if (typeof Swiper !== 'undefined') {
+                const swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 3, // Show three slides at once
+                    spaceBetween: 5, // Space between slides
+                    loop: true, // Enable looping (infinite scroll)
+                    navigation: {
+                        nextEl: '.swiper-button-next', // Next button
+                        prevEl: '.swiper-button-prev', // Previous button
+                    },
+                });
+            }
+
+            // 4. Form Submission Logic
+            const popup = document.getElementById("popup-zapier");
+            const openZapier = document.getElementById("open-zapier");
+            const closePopup = document.getElementById('close-zapier');
+            const form = document.getElementById("form");
+
+            openZapier.addEventListener("click", () => {
+                popup.style.display = "flex";
+            });
+
+            closePopup.addEventListener("click", () => {
+                popup.style.display = "none";
+            });
+
+            popup.addEventListener("click", (e) => {
+                if (e.target === popup) {
+                    popup.style.display = "none";
+                }
+            });
+
+            form.addEventListener("submit", async function (event) {
+                event.preventDefault();
+
+                const email = document.getElementById("email").value;
+                const name = document.getElementById("name").value;
+                const message = document.getElementById("message").value;
+
+                try {
+                    const response = await fetch("https://cors-anywhere.herokuapp.com/https://hooks.zapier.com/hooks/catch/21426418/2kn6djk/", 
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify({ email, message, name }),
+                    });
+
+                    if (response.ok) {
+                        alert("Feedback submitted successfully!");
+                        form.reset();
+                        popup.style.display = "none";
+                    } else {
+                        alert("Failed to submit feedback. Please try again.");
+                    }
+                } catch (error) {
+                    alert("An error occurred: " + error.message);
+                }
+            });
+        });
+    </script>
+      
+</body>
+</html>
